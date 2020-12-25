@@ -1,0 +1,20 @@
+## The All New Savings Account Made By Opinion Classifier LANI
+
+
+자연어 전처리 및 감정분석은 구글API를 이용 했습니다.
+
+
+## Data information
+네이버, 다음에서 크롤링하여 추출
+
+## Requirements
+
+import urllib.request
+import requests
+import json
+from bs4 import BeautifulSoup
+from google.cloud import language
+
+## Usage
+
+- 실행 환경은 colab입니다. colab에서 scrap_and_score.ipynb실행하면 됩니다.
