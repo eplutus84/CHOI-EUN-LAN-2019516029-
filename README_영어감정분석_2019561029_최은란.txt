@@ -1,0 +1,32 @@
+## 영어 감정 분석
+
+해당 글과 코드를 수정하여 실험을 진행했습니다.
+https://github.com/jiwonny/nlp_emotion_classification
+
+## Data information
+Freinds 데이터 사용
+
+## Requirements
+
+- json
+- re
+- nltk
+- matplotlib.pyplot 
+- nltk.corpus import stopwords
+- nltk.tag import pos_tag
+- nltk.tokenize import word_tokenize
+- nltk import Text
+- collections
+from keras.layers.core import Dense, SpatialDropout1D 
+from keras.layers.convolutional import Conv1D 
+from keras.layers.embeddings import Embedding
+from keras.layers.pooling import GlobalMaxPooling1D
+from keras.layers import LSTM
+from keras.models import Sequential
+from keras.preprocessing.sequence import pad_sequences 
+from keras.utils import np_utils 
+from sklearn.model_selection import train_test_split
+
+## Usage
+
+- 실행 환경은 colab입니다. colab에 연동 후, Friends(LSTM).ipynb 파일과 EmotionLines_friends_annotation.tar.zip, en_data.csv 를 업로드하고 실행하면 구글 드라이브에 Subfriend lstm.csv이 생성됩니다.
